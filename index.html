@@ -5,20 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gauss in the Shell</title>
 <meta name="description" content="Solution architecture, applied AI and digital compliance.">
+<meta name="theme-color" content="#13212F">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <style>
-  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 28px; padding: 32px; box-sizing: border-box; background: #FAFAF7; color: #13212F; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; text-align: center; }
-  img { width: min(420px, 90vw); height: auto; }
-  p { margin: 0; font-size: 18px; color: #4B5563; }
-  a { color: #B45309; font-weight: 600; }
-  footer { position: absolute; bottom: 20px; left: 0; right: 0; font-size: 12px; color: #5B6670; }
+  :root { --ink: #13212F; --amber: #F59E0B; --text: #E6EAEE; --muted: #AAB4BF; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--ink); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+  main { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 32px; padding: 48px 24px; text-align: center; }
+  img { width: min(440px, 88vw); height: auto; }
+  .tagline { margin: 0; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 16px; color: var(--muted); }
+  .tagline::before { content: "> "; color: var(--amber); }
+  .contact { margin: 0; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 16px; }
+  a { color: var(--amber); text-decoration: none; border-bottom: 1px solid rgba(245,158,11,.4); }
+  a:hover, a:focus-visible { border-bottom-color: var(--amber); }
+  footer { padding: 20px 24px; text-align: center; font-size: 12px; color: var(--muted); }
 </style>
 </head>
 <body>
-  <img src="gits-lockup.svg" alt="Gauss in the Shell">
-  <p>Solution architecture · Applied AI · Digital compliance</p>
-  <p><a href="mailto:jonathan@gaussit.be">jonathan@gaussit.be</a></p>
+  <main>
+    <img src="gits-lockup-white.svg" alt="Gauss in the Shell">
+    <p class="tagline">Solution&nbsp;architecture · Applied&nbsp;AI · Digital&nbsp;compliance</p>
+    <p class="contact"><a href="mailto:jonathan@gaussit.be">jonathan@gaussit.be</a> · <a href="https://www.linkedin.com/in/jonathanbodart">LinkedIn</a></p>
+  </main>
   <footer>Gauss In The Shell BV (in oprichting)</footer>
 </body>
 </html>
